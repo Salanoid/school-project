@@ -25,5 +25,9 @@ nav li {
 
 .links {
   text-decoration: none;
-  color: #f8f2d8;
+  color: #f9f2e9;
+}
+
+nav li .links:hover {
+  color: white;
 }

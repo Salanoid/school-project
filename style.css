@@ -15,3 +15,8 @@ nav li {
   background-color: #f8f2d8;
   height: 600px;
 }
+
+.img-recipe {
+  padding-left: 10px;
+  padding-right: 10px;
+}

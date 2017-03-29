@@ -1,6 +1,7 @@
 nav li {
   display: inline;
   color: #f8f2d8;
+  padding-top: 50px;
 }
 
 .header {
@@ -8,4 +9,9 @@ nav li {
   background-color: #6e0001;
   list-style-type: none;
   overflow: hidden;
+}
+
+.content {
+  background-color: #f8f2d8;
+  height: 600px;
 }

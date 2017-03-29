@@ -1,0 +1,9 @@
+nav li {
+  display: inline;
+  color: #f8f2d8;
+}
+
+.header {
+  height: 50px;
+  background-color: #6e0001;
+}

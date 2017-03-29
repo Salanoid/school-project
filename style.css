@@ -6,4 +6,6 @@ nav li {
 .header {
   height: 50px;
   background-color: #6e0001;
+  list-style-type: none;
+  overflow: hidden;
 }

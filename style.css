@@ -22,3 +22,8 @@ nav li {
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.links {
+  text-decoration: none;
+  color: #f8f2d8;
+}

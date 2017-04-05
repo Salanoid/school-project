@@ -1,1 +1,1 @@
-PHP Recipe list project for school.
+PHP Recipes list project for school.

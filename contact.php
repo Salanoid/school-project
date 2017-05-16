@@ -25,7 +25,7 @@
       if(isset($_POST["submit"])){
         $sql = "INSERT INTO contact (name, question)
                 VALUES ('".$_POST["name"]."','".$_POST["question"]."')";
-                if ($dbh->query($sql)) {
+                if ($conn->query($sql)) {
                   echo "<script type= 'text/javascript'>alert('New Record Inserted Successfully');</script>";
                 }
                 else{

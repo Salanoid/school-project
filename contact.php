@@ -18,9 +18,23 @@
         <input type="submit" value="Submit" name="submit">
         <br>
       </form>
+      <br>
+      <br>
+      <br>
+    
+    <?php
+      $getContact = $conn->prepare("SELECT * FROM contact");
+      $getContact->execute();
+      $contacts = $getContact->fetchAll();
+      foreach ($contacts as $contact) {
+        echo "Name: " . $contact['name'] . '<br>';
+        echo "Question: " . $contact['question'] . '<br>';
+        echo '<hr>';
+      }
+    ?>
 
     </div>
-    
+      
     <?php
       if(isset($_POST["submit"])){
         $sql = "INSERT INTO contact (name, question)
@@ -33,5 +47,6 @@
                 }
 
       }
-?>
+    ?>
+
 <?php echo $footer; ?>

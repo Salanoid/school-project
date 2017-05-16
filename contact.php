@@ -15,7 +15,7 @@
         <br><br>
         <textarea name="question" placeholder="Question" cols="28" rows="3"></textarea>
         <br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" name="submit">
         <br>
       </form>
 

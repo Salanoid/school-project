@@ -21,20 +21,21 @@
       <br>
       <br>
       <br>
-    
+
     <?php
       $getContact = $conn->prepare("SELECT * FROM contact");
       $getContact->execute();
       $contacts = $getContact->fetchAll();
       foreach ($contacts as $contact) {
+        echo '<hr>';
         echo "Name: " . $contact['name'] . '<br>';
         echo "Question: " . $contact['question'] . '<br>';
-        echo '<hr>';
       }
+      echo '<hr>';
     ?>
 
     </div>
-      
+
     <?php
       if(isset($_POST["submit"])){
         $sql = "INSERT INTO contact (name, question)

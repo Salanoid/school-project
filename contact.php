@@ -14,7 +14,7 @@
         <input type="text" name="name" placeholder="Full Name" size="30">
         <br><br>
         <textarea name="question" placeholder="Question" cols="28" rows="3"></textarea>
-        <br>
+        <br><br>
         <input type="submit" value="Submit" name="submit">
         <br>
       </form>
@@ -22,17 +22,17 @@
       <br>
       <br>
 
-    <?php
-      $getContact = $conn->prepare("SELECT * FROM contact");
-      $getContact->execute();
-      $contacts = $getContact->fetchAll();
-      foreach ($contacts as $contact) {
+      <?php
+        $getContact = $conn->prepare("SELECT * FROM contact");
+        $getContact->execute();
+        $contacts = $getContact->fetchAll();
+        foreach ($contacts as $contact) {
+          echo '<hr>';
+          echo "Name: " . $contact['name'] . '<br>';
+          echo "Question: " . $contact['question'] . '<br>';
+        }
         echo '<hr>';
-        echo "Name: " . $contact['name'] . '<br>';
-        echo "Question: " . $contact['question'] . '<br>';
-      }
-      echo '<hr>';
-    ?>
+      ?>
 
     </div>
 

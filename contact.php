@@ -2,6 +2,7 @@
     require_once 'components/header.php';
     require_once 'components/footer.php';
     echo $header;
+    require_once 'database.php';
 ?>
 
     <div class="content">
@@ -11,7 +12,7 @@
 
       <form>
         <input type="text" name="fullname" placeholder="Full Name" size="30">
-        <br>
+        <br><br>
         <textarea name="question" placeholder="Question" cols="28" rows="3"></textarea>
         <br>
         <input type="submit" value="Submit">

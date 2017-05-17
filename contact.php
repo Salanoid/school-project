@@ -11,9 +11,9 @@
       <h3>Do you need help? Check if there is the question you wish to ask below. <br>If not, ask a new question with this form:</h3>
 
       <form method="post" action="">
-        <input type="text" name="name" placeholder="Full Name" size="30">
+        <input type="text" name="name" placeholder="Full Name" size="30" required>
         <br><br>
-        <textarea name="question" placeholder="Question" cols="28" rows="3"></textarea>
+        <textarea name="question" placeholder="Question" cols="28" rows="3" required></textarea>
         <br><br>
         <input type="submit" value="Submit" name="submit">
         <br>

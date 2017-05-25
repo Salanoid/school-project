@@ -12,10 +12,10 @@ $header = '<!DOCTYPE html>
                 <nav class="header">
                   <div>
                     <ul>
-                      <li><a href="index.php" class="links">Recipes</a></li>
+                      <li><a href="index.php" class="links">All Recipes</a></li>
                       <li><a href="about.php" class="links">About</a></li>
                       <li><a href="contact.php" class="links">Contact</a></li>
-                      <li><a href="form.php" class="links">New Recipe</a></li>
+                      <li><a href="form.php" class="links">Add Recipe</a></li>
                     </ul>
                   </div>
                 </nav>';

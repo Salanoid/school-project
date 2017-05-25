@@ -13,7 +13,7 @@
         <form method="post" action="">
             <input type="text" name="title" placeholder="Title" size="30" required /> <br> <br>
             <input type="text" name="ingredients" placeholder="Ingredients" size="30" required /> <br> <br>
-            <textarea name="preparationmethod" placeholder="Preparation method" cols="28" rows="3" required></textarea> <br> <br>
+            <textarea name="preparationmethod" placeholder="Preparation method" cols="28" rows="7" required></textarea> <br> <br>
             <input type="number" name="preparationtime" placeholder="Preparation Time (hours)" required/> <br> <br>
             <input type="submit" value="Submit" name="submit" />
         </form>

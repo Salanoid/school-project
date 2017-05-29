@@ -27,12 +27,11 @@
         $getRecipe->execute();
         $recipes = $getRecipe->fetchAll();
         foreach ($recipes as $recipe) {
-          echo '<a href="recipe.php"><div>';
           echo "<h1 class='inline-recipe'>" . $recipe['title'] . '</h1>';
           echo '<br><img src="chef.png" height="200px" class="flip"><img src="chef.png" height="200px" class="normal">';
-          echo "<br><b>Ingredients:</b> " . $recipe['ingredients'] . '<br>';
-          echo "<br><b>Preparation method:</b> " . $recipe['preparationmethod'] . '<br>';
-          echo "<br><b>Preparation time:</b> " . $recipe['preparationtime'] . ' hours<br><br><br><br><br><hr>';
+          echo "<br><b>Ingredients:</b> <br>" . $recipe['ingredients'] . '<br>';
+          echo "<br><b>Preparation method:</b> <br>" . $recipe['preparationmethod'] . '<br>';
+          echo "<br><b>Preparation time:</b> <br>" . $recipe['preparationtime'] . ' hours<br><br><br><br><br><hr>';
         }
       ?>
 
